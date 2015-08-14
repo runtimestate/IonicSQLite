@@ -1,0 +1,64 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="{{item.question}}">
+    <ion-content class="padding">
+
+        <div class="list">
+            <div class="item">
+                <p>
+                    Question: {{item.question}}
+                </p>
+                <p>
+                    Answer: {{item.answer}}
+                </p>
+
+                <ul class="list">
+
+                    <li class="item item-checkbox">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                        </label>
+                        Answer 1
+                    </li>
+
+                    <li class="item item-checkbox">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                        </label>
+                        Answer 2
+                    </li>
+
+                    <li class="item item-checkbox">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                        </label>
+                        Answer 3
+                    </li>
+
+                    <li class="item item-checkbox">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                        </label>
+                        Answer 4
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="item tabs tabs-secondary tabs-icon-left">
+                <a class="tab-item" href="#" ng-click="goTo('p')">
+                    <i class="ion-ios-arrow-thin-left"></i>
+                    Previous
+                </a>
+                <a class="tab-item" href="#" ng-click="goTo('n')">
+                    Next
+                    <i class="ion-ios-arrow-thin-right"></i>
+                </a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
